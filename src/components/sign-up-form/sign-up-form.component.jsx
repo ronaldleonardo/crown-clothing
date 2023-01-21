@@ -56,7 +56,7 @@ const SignUpForm = () => {
 		<div className='sign-up-container'>
 			<h2>Don't have an account?</h2>
 			<span>Sign up with your email and password</span>
-			<form onSubmit={() => {}}>
+			<form onSubmit={handleSubmit}>
 
 				<FormInput 
 					label='Display Name'
@@ -93,7 +93,7 @@ const SignUpForm = () => {
 					value={confirmPassword}
 				/>
 
-				<Button type="submit" onClick={handleSubmit}>Sign Up</Button>
+				<Button type="submit">Sign Up</Button>
 			</form>
 		</div>
 	);
