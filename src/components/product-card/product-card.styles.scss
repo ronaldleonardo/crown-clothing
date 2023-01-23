@@ -33,19 +33,19 @@
   }
 
   .footer {
-    width: 100%;
+    width: 90%;
     height: 5%;
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 16px;
 
     .name {
-      width: 90%;
+      width: 85%;
       margin-bottom: 15px;
     }
 
     .price {
-      width: 10%;
+      width: 15%;
     }
   }
 }
