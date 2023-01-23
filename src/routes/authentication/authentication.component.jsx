@@ -11,7 +11,7 @@
 import SignUpForm from '../../components/sign-up-form/sign-up-form.component';
 import SignInForm from '../../components/sign-in-form/sign-in-form.component';
 
-import './authentication.styles.scss';
+import { AuthenticationContainer } from './authentication.styles';
 
 const Authentication = () => {
 	// // If you want google redirect or any redirect
@@ -36,7 +36,7 @@ const Authentication = () => {
 
 
 	return(
-		<div className='authentication-container'>
+		<AuthenticationContainer>
 			<SignInForm />
 			<SignUpForm />
 
@@ -44,7 +44,7 @@ const Authentication = () => {
 				Sign in with Google Redirect
 			</button>*/}
 
-		</div>
+		</AuthenticationContainer>
 	);
 };
 
