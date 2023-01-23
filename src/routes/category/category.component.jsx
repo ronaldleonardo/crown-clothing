@@ -18,7 +18,9 @@ const Category = () => {
 
 	return (
 		<Fragment>
-			<CategoryTitle>{category.toUpperCase()}</CategoryTitle>
+			<CategoryTitle to='/shop'>
+				<h2>{category.toUpperCase()}</h2>
+			</CategoryTitle>
 			<CategoryContainer>
 				{products &&
 					products.map((product) => {

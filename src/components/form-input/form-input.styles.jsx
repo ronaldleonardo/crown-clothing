@@ -39,6 +39,9 @@ export const Input = styled.input`
   &:focus ~ ${FormInputLabel} {
     ${shrinkLabelStyles};
   }
+  &:active {
+    background-color: #d5d5d5;
+  }
 `;
 
 export const Group = styled.div`

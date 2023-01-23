@@ -11,6 +11,10 @@ export const CategoryTitle = styled(Link)`
   font-size: 28px;
   margin-bottom: 25px;
   cursor: pointer;
+
+  &:active {
+    color: grey;
+  }
 `;
 
 export const Preview = styled.div`

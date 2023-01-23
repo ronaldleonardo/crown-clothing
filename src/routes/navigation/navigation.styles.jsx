@@ -14,6 +14,10 @@ export const LogoContainer = styled(Link)`
   height: 100%;
   width: 70px;
   padding: 15px;
+
+    &:active {
+      opacity: 0.5;
+    }
 `;
 
 export const NavLinks = styled.div`
@@ -25,6 +29,11 @@ export const NavLinks = styled.div`
 `;
 
 export const NavLink = styled(Link)`
-  padding: 50px 10px 15px;
+  padding: 15px 10px 15px;
+  margin: 50px 10px 15px;
   cursor: pointer;
+
+    &:active {
+      background-color: lightgrey;
+    }
 `;

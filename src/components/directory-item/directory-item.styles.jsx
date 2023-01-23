@@ -30,6 +30,9 @@ export const Body = styled.div`
     font-weight: lighter;
     font-size: 16px;
   }
+  &:active {
+    background-color: darkgrey;
+  }
 `;
 
 export const DirectoryItemContainer = styled.div`
@@ -57,5 +60,6 @@ export const DirectoryItemContainer = styled.div`
     ${Body} {
       opacity: 0.9;
     }
-  }
+
+}
 `;

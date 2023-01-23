@@ -12,7 +12,7 @@ import { CartContext } from '../../contexts/cart.context';
 
 import { signOutUser } from '../../utils/firebase/firebase.utils';
 
-import {NavigationContainer, LogoContainer, NavLinks, NavLink} from './navigation.styles';
+import { NavigationContainer, LogoContainer, NavLinks, NavLink } from './navigation.styles';
 
 const Navigation = () => {
 	const { currentUser } = useContext(UserContext);
@@ -25,8 +25,12 @@ const Navigation = () => {
 				<LogoContainer to ='/'>
 						<CrownLogo className = 'logo' />
 				</LogoContainer>
+					
+
 
 				<NavLinks>
+					{ currentUser && <NavLink as='span'>{`Hi! ${currentUser.email}`}</NavLink>}
+
 					<NavLink to ='/shop'>
 						SHOP
 					</NavLink>
@@ -37,6 +41,7 @@ const Navigation = () => {
 							<NavLink to ='/auth'>SIGN IN</NavLink>
 						)
 					}
+
 					<CartIcon/>
 	    	</NavLinks>
 				{ isCartOpen &&	 <CartDropdown />} 

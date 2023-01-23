@@ -11,7 +11,11 @@ export const CartIconContainer = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin-top: 25px;
+  margin-top: 30px;
+
+  &:active {
+    background-color: lightgrey;
+  }
 `;
 
 export const ShoppingIcon = styled(ShoppingSvg)`
@@ -24,5 +28,6 @@ export const ItemCount = styled.span`
   font-size: 10px;
   font-weight: bold;
   bottom: 12px;
+  padding: 0 0 1px 1px;
 `;
 
